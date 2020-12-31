@@ -19,6 +19,7 @@
         <activity android:name=".TinhToanActivity"></activity>
         <activity android:name=".GiaiPhuongTrinhActivity"></activity>
         <activity android:name=".ChuyenDoiActivity"></activity>
+        <activity android:name=".ChuyenDoiHeSoActivity"></activity>
 
 
     </application>

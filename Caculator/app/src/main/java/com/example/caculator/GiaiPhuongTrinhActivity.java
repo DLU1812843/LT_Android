@@ -28,7 +28,7 @@ public class GiaiPhuongTrinhActivity extends AppCompatActivity {
         txtThongBao = findViewById(R.id.txtGo);
         txtX1 = findViewById(R.id.txtX1);
         txtX2 = findViewById(R.id.txtX2);
-        btnOK = findViewById(R.id.btnOK);
+        btnOK = findViewById(R.id.btnChange);
 
               btnOK.setOnClickListener(new View.OnClickListener() {
                   @Override
