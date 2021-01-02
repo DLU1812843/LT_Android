@@ -21,8 +21,8 @@ public class ChuyenDoiHeSoActivity extends AppCompatActivity {
     }
     public  void Init()
     {
-        txtInput = findViewById(R.id.txtInput);
-        lblOutput = findViewById(R.id.lblOutput);
+      //  txtInput = findViewById(R.id.txtInput);
+      //  lblOutput = findViewById(R.id.lblOutput);
         btnChange = findViewById(R.id.btnChange);
         btnChange.setOnClickListener(new View.OnClickListener() {
             @Override

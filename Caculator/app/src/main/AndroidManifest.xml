@@ -20,6 +20,7 @@
         <activity android:name=".GiaiPhuongTrinhActivity"></activity>
         <activity android:name=".ChuyenDoiActivity"></activity>
         <activity android:name=".ChuyenDoiHeSoActivity"></activity>
+        <activity android:name=".HePhuongTrinhActivity"></activity>
 
 
     </application>
