@@ -10,15 +10,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10">
-    <TextView
+    <Button
+        android:id="@+id/btnHePhuongTrinh"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Chọn chức năng">
+        android:text="Giai he phuong trinh">
 
-    </TextView>
+    </Button>
     <Button
         android:id="@+id/btnTinhToan"
         android:layout_width="wrap_content"
