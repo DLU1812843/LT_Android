@@ -38,8 +38,15 @@ public class ChuyenDoiHeSoActivity extends AppCompatActivity {
                 if (rd2to10.isChecked())
                 {
                     String binaryString = txtInput.getText().toString();
-
-                    lblOutput.setText(Integer.parseInt(binaryString,2));
+                    int a = Integer.parseInt(binaryString,2);
+                    lblOutput.setText(Integer.toString(a));
+                }
+                if (rd2to16.isChecked())
+                {
+                    String binaryString = txtInput.getText().toString();
+                    int a = Integer.parseInt(binaryString,2);
+                    String hexa = Integer.toString(a,16);
+                    lblOutput.setText(hexa);
                 }
                 if (rd10to2.isChecked())
                 {
@@ -50,6 +57,18 @@ public class ChuyenDoiHeSoActivity extends AppCompatActivity {
                 {
                     int x = Integer.parseInt(txtInput.getText().toString());
                     lblOutput.setText(Integer.toHexString(x));
+                }
+                if (rd16to10.isChecked())
+                {
+                    String hexa = txtInput.getText().toString();
+                    int decimal = Integer.parseInt(hexa,16);
+                    lblOutput.setText(Integer.toString(decimal));
+                }
+                if (rd16to2.isChecked())
+                {
+                    String hexa = txtInput.getText().toString();
+                    int decimal = Integer.parseInt(hexa,16);
+                    lblOutput.setText(Integer.toBinaryString(decimal));
                 }
 
 

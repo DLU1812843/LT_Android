@@ -13,9 +13,31 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="3"
             android:orientation="vertical"
             android:weightSum="8">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:weightSum="4"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text = "Input:"
+                    android:gravity="center"
+                    ></TextView>
+                <EditText
+                    android:id="@+id/txtNhapInput"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:hint="Nhập input">
+
+                </EditText>
+            </LinearLayout>
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -51,7 +73,13 @@
                     android:text="Decimal to Hexa">
 
                 </RadioButton>
+                <RadioButton
+                    android:id="@+id/rdHexToDec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hexa to Decimal">
 
+                </RadioButton>
                 <RadioButton
                     android:id="@+id/rdHexToBin"
                     android:layout_width="match_parent"
@@ -60,44 +88,17 @@
 
                 </RadioButton>
 
-                <RadioButton
-                    android:id="@+id/rdHexToDec"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Hexa to Decimal">
 
-                </RadioButton>
 
             </RadioGroup>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="2"
-                android:weightSum="4"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:text = "Input:"
-                    android:gravity="center"
-                    ></TextView>
-                <EditText
-                    android:id="@+id/txtNhapInput"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:hint="Nhập input">
 
-                </EditText>
-            </LinearLayout>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:weightSum="4"
             android:orientation="vertical">
             <Button
