@@ -35,8 +35,24 @@ public class ChuyenDoiHeSoActivity extends AppCompatActivity {
         btnChuyenDoi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (rd2to10.isChecked()==true)
-                {}
+                if (rd2to10.isChecked())
+                {
+                    String binaryString = txtInput.getText().toString();
+
+                    lblOutput.setText(Integer.parseInt(binaryString,2));
+                }
+                if (rd10to2.isChecked())
+                {
+                    int x = Integer.parseInt(txtInput.getText().toString());
+                    lblOutput.setText(Integer.toBinaryString(x));
+                }
+                if (rd10to16.isChecked())
+                {
+                    int x = Integer.parseInt(txtInput.getText().toString());
+                    lblOutput.setText(Integer.toHexString(x));
+                }
+
+
             }
         });
 
