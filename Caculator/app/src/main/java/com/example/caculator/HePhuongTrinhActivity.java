@@ -40,15 +40,15 @@ f = findViewById(R.id.txtF);
                 if (c.getText().toString().isEmpty())
                     c.setError("Chưa nhập C");
                 if (d.getText().toString().isEmpty())
-                    d.setError("Chưa nhập A");
+                    d.setError("Chưa nhập D");
                 if (e.getText().toString().isEmpty())
-                    e.setError("Chưa nhập B");
+                    e.setError("Chưa nhập E");
                 if (f.getText().toString().isEmpty())
-                    f.setError("Chưa nhập C");
+                    f.setError("Chưa nhập F");
                 else {
                     double dx, dy, dd;
  /*
- *  d = a*e - d*b
+ *  dd = a*e - d*b
     dx = e*c - f*b
     dy = a*f - d*c */
                     dd = Integer.parseInt(a.getText().toString())*Integer.parseInt(e.getText().toString())
@@ -62,7 +62,6 @@ f = findViewById(R.id.txtF);
                             txtKQ.setText("Hệ phương trình có vô số nghiệm!");
                         else
                             txtKQ.setText("Hệ phương trình vô nghiệm!");
-
                     }
                     else
                     {

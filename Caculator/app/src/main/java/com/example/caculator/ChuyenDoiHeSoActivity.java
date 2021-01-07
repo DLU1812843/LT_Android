@@ -1,8 +1,10 @@
 package com.example.caculator;
 
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -32,6 +34,13 @@ public class ChuyenDoiHeSoActivity extends AppCompatActivity {
         txtInput = findViewById(R.id.txtNhapInput);
         lblOutput = findViewById(R.id.lblOutput);
 
+        rd16to10.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
+            }
+        });
+
         btnChuyenDoi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,12 +69,14 @@ public class ChuyenDoiHeSoActivity extends AppCompatActivity {
                 }
                 if (rd16to10.isChecked())
                 {
+
                     String hexa = txtInput.getText().toString();
                     int decimal = Integer.parseInt(hexa,16);
                     lblOutput.setText(Integer.toString(decimal));
                 }
                 if (rd16to2.isChecked())
                 {
+
                     String hexa = txtInput.getText().toString();
                     int decimal = Integer.parseInt(hexa,16);
                     lblOutput.setText(Integer.toBinaryString(decimal));
