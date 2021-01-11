@@ -52,23 +52,23 @@ public class MainActivity extends AppCompatActivity {
 
         return true;
     }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+   // @Override
+  /*  public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId())
         {
             case android.R.id.home:
                 onBackPressed();
                 return true;
             case R.id.action_about:
-                Intent intent = new Intent(this, AboutActivity.class);
-                startActivity(intent);
+             //   Intent intent = new Intent(this, AboutActivity.class);
+              //  startActivity(intent);
                 break;
 
             default:break;
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
         @Override
         public boolean onSupportNavigateUp () {
             NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
